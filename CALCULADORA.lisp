@@ -45,3 +45,10 @@
 
 ;; no borres esto
 (menu-principal)
+
+; =========================================================
+; PROGRAMA: TABLAS DE MULTIPLICAR DEL 1 AL 10 EN LISP
+; DESCRIPCIÓN:
+; Este programa muestra las tablas de multiplicar del 1 al 10
+; utilizando funciones, ciclos y formato de salida.
+; =========================================================
