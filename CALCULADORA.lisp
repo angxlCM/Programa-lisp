@@ -109,3 +109,16 @@
             (mostrar-menu)
             (setf opcion (read))
             (cond
+((= opcion 1)
+    (format t "~%Ingrese el lado del cuadrado: ")
+    (let ((lado (read)))
+        (format t "~%Área del cuadrado = ~,2F~%"
+                (area-cuadrado lado))))
+
+((= opcion 2)
+    (format t "~%Ingrese la base: ")
+    (let ((base (read)))
+        (format t "Ingrese la altura: ")
+        (let ((altura (read)))
+            (format t "~%Área del rectángulo = ~,2F~%"
+                    (area-rectangulo base altura)))))
