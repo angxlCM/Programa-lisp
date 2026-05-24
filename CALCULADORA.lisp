@@ -69,3 +69,5 @@
 (mostrar-linea))
 (defun ejecutar-tablas ()
 (mostrar-encabezado)
+(loop for n from 1 to 10 do
+    (mostrar-tabla n))
