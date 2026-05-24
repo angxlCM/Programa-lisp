@@ -31,10 +31,10 @@
 
 (defun mi-calculadora ()
   (format t "~%##### CALCULADORA #####~%")
-  (format t "Operaciones: +, -, *, /, log, exp~%")
+  (format t "Operaciones: +, -, *, /, log, exp, abs~%")
   (let* ((a (progn (format t "Ingrese el primer número (o base): ") (finish-output) (read)))
-         (b (progn (format t "Ingrese el segundo número: ") (finish-output) (read)))
-         (op (progn (format t "Ingrese la operación (+, -, *, /, log, exp): ") (finish-output) (read))))
+         (b (progn (format t "Ingrese el segundo número (para abs no importa, inserte cualquiera): ") (finish-output) (read)))
+         (op (progn (format t "Ingrese la operación (+, -, *, /, log, exp, abs): ") (finish-output) (read))))
 
   (case op
       ('+ (format t "~%Resultado: ~A~%" (+ a b)))
@@ -53,6 +53,7 @@
 
       ;exponencial: a elevado a la b
       ('exp (format t "~%Resultado: ~A~%" (expt a b)))
+      ('abs (format t "~%Resultado: ~A~%" (abs a)))
       (t (format t "~%Operación no válida.~%")))))
 
 
