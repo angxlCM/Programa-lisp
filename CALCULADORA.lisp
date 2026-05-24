@@ -68,3 +68,4 @@
             (* numero i)))
 (mostrar-linea))
 (defun ejecutar-tablas ()
+(mostrar-encabezado)
