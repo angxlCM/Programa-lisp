@@ -81,8 +81,72 @@
     (format t "~%")))
 
 (defun calcular-areas ()
-  "Módulo desarrollado por Integrante 2: Áreas de 4 figuras geométricas."
-  (format t "~%[Módulo Áreas en construcción]~%"))
+  (let ((opcion 0))
+    (loop
+      ; Menu
+      (format t "~%======================================")
+      (format t "~%   CALCULADORA DE ÁREAS EN LISP")
+      (format t "~%======================================")
+      (format t "~%1. Área de un cuadrado")
+      (format t "~%2. Área de un rectángulo")
+      (format t "~%3. Área de un triángulo")
+      (format t "~%4. Área de un círculo")
+      (format t "~%5. Área de un trapecio")
+      (format t "~%6. Salir")
+      (format t "~%======================================")
+      (format t "~%Seleccione una opción: ")
+      (finish-output)
+      (setf opcion (read))
+      
+      (cond
+        ((= opcion 1)
+         (format t "~%Ingrese el lado del cuadrado: ")
+         (finish-output)
+         (let ((lado (read)))
+           (format t "~%Área del cuadrado = ~,2F~%" (* lado lado))))
 
+        ((= opcion 2)
+         (format t "~%Ingrese la base: ")
+         (finish-output)
+         (let ((base (read)))
+           (format t "Ingrese la altura: ")
+           (finish-output)
+           (let ((altura (read)))
+             (format t "~%Área del rectángulo = ~,2F~%" (* base altura)))))
+
+        ((= opcion 3)
+         (format t "~%Ingrese la base: ")
+         (finish-output)
+         (let ((base (read)))
+           (format t "Ingrese la altura: ")
+           (finish-output)
+           (let ((altura (read)))
+             (format t "~%Área del triángulo = ~,2F~%" (/ (* base altura) 2)))))
+
+        ((= opcion 4)
+         (format t "~%Ingrese el radio: ")
+         (finish-output)
+         (let ((radio (read)))
+           (format t "~%Área del círculo = ~,2F~%" (* 3.1416 radio radio))))
+
+        ((= opcion 5)
+         (format t "~%Ingrese la base mayor: ")
+         (finish-output)
+         (let ((bmayor (read)))
+           (format t "Ingrese la base menor: ")
+           (finish-output)
+           (let ((bmenor (read)))
+             (format t "Ingrese la altura: ")
+             (finish-output)
+             (let ((altura (read)))
+               (format t "~%Área del trapecio = ~,2F~%"
+                       (/ (* (+ bmayor bmenor) altura) 2))))))
+
+        ((= opcion 6)
+         (format t "~%Programa finalizado.~%")
+         (return))
+
+        (t
+         (format t "~%Opción inválida. Intente nuevamente.~%"))))))
 
 (menu-principal)
