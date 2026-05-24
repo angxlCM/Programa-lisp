@@ -30,8 +30,22 @@
 ;; =========
 
 (defun mi-calculadora ()
-  "Módulo desarrollado por Integrante 1: Operaciones aritméticas básicas."
-  (format t "~%[Módulo Calculadora en construcción]~%"))
+  (format t "~%##### CALCULADORA #####~%")
+  (format t "Operaciones: +, -, *, /~%")
+  (let* ((a (progn (format t "Ingrese el primer número: ") (finish-output) (read)))
+         (b (progn (format t "Ingrese el segundo número: ") (finish-output) (read)))
+         (op (progn (format t "Ingrese la operación (+, -, *, /): ") (finish-output) (read))))
+
+  (case op
+      ('+ (format t "~%Resultado: ~A~%" (+ a b)))
+      ('- (format t "~%Resultado: ~A~%" (- a b)))
+      ('* (format t "~%Resultado: ~A~%" (* a b)))
+      ('/ (if (= b 0)
+              (format t "~%Error: Dominio inválido (división por cero).~%")
+              (format t "~%Resultado: ~A~%" (/ a b))))
+      (t (format t "~%Operación no válida.~%")))))
+
+  (format t "~%[Módulo Calculadora en construcción]~%")
 
 (defun mostrar-tablas ()
   "Módulo desarrollado por Integrante 2: Tablas de multiplicar del 1 al 10."
