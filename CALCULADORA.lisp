@@ -135,3 +135,19 @@
     (let ((radio (read)))
         (format t "~%Área del círculo = ~,2F~%"
                 (area-circulo radio))))
+((= opcion 5)
+    (format t "~%Ingrese la base mayor: ")
+    (let ((bmayor (read)))
+        (format t "Ingrese la base menor: ")
+        (let ((bmenor (read)))
+            (format t "Ingrese la altura: ")
+            (let ((altura (read)))
+                (format t "~%Área del trapecio = ~,2F~%"
+                        (area-trapecio
+                            bmayor
+                            bmenor
+                            altura))))))
+
+((= opcion 6)
+    (format t "~%Programa finalizado.~%")
+    (return))
