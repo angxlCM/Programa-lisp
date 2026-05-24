@@ -102,3 +102,10 @@
     (* 3.1416 radio radio))
 (defun area-trapecio (base-mayor base-menor altura)
     (/ (* (+ base-mayor base-menor) altura) 2))
+(defun iniciar-programa ()
+    (let ((opcion 0))
+
+        (loop
+            (mostrar-menu)
+            (setf opcion (read))
+            (cond
