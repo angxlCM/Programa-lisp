@@ -100,3 +100,5 @@
     (/ (* base altura) 2))
 (defun area-circulo (radio)
     (* 3.1416 radio radio))
+(defun area-trapecio (base-mayor base-menor altura)
+    (/ (* (+ base-mayor base-menor) altura) 2))
