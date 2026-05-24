@@ -30,11 +30,17 @@
         (loop
             (mostrar-menu)
             (setf opcion (read))
+; -----------------------------------
+; CUADRADO
+; -----------------------------------
 ((= opcion 1)
     (format t "~%Ingrese el lado del cuadrado: ")
     (let ((lado (read)))
         (format t "~%Área del cuadrado = ~,2F~%"
                 (area-cuadrado lado))))
+; -----------------------------------
+; RECTÁNGULO
+; -----------------------------------
 ((= opcion 2)
     (format t "~%Ingrese la base: ")
     (let ((base (read)))
@@ -42,3 +48,13 @@
         (let ((altura (read)))
             (format t "~%Área del rectángulo = ~,2F~%"
                     (area-rectangulo base altura)))))
+; -----------------------------------
+; TRIÁNGULO
+; -----------------------------------
+((= opcion 3)
+    (format t "~%Ingrese la base: ")
+    (let ((base (read)))
+        (format t "Ingrese la altura: ")
+        (let ((altura (read)))
+            (format t "~%Área del triángulo = ~,2F~%"
+                    (area-triangulo base altura)))))
