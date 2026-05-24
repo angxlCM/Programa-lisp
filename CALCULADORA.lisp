@@ -61,3 +61,8 @@
 (defun mostrar-tabla (numero)
     (format t "~%Tabla del ~D~%" numero)
     (mostrar-linea)
+(loop for i from 1 to 10 do
+    (format t "~2D x ~2D = ~3D~%"
+            numero
+            i
+            (* numero i)))
