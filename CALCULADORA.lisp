@@ -72,3 +72,4 @@
 (loop for n from 1 to 10 do
     (mostrar-tabla n))
 (format t "~%Programa finalizado correctamente.~%"))
+(ejecutar-tablas)
