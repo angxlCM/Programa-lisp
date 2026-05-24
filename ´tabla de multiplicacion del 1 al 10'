@@ -16,3 +16,19 @@
 (defun mostrar-tabla (numero)
     (format t "~%Tabla del ~D~%" numero)
     (mostrar-linea)
+; Ciclo para multiplicar del 1 al 10
+    (loop for i from 1 to 10 do
+        (format t "~2D x ~2D = ~3D~%"
+                numero
+                i
+                (* numero i)))
+
+    (mostrar-linea))
+
+(defun ejecutar-tablas ()
+    ; Mostrar título principal
+    (mostrar-encabezado)
+
+    ; Mostrar tablas del 1 al 10
+    (loop for n from 1 to 10 do
+        (mostrar-tabla n))
