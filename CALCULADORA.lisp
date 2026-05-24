@@ -122,3 +122,16 @@
         (let ((altura (read)))
             (format t "~%Área del rectángulo = ~,2F~%"
                     (area-rectangulo base altura)))))
+((= opcion 3)
+    (format t "~%Ingrese la base: ")
+    (let ((base (read)))
+        (format t "Ingrese la altura: ")
+        (let ((altura (read)))
+            (format t "~%Área del triángulo = ~,2F~%"
+                    (area-triangulo base altura)))))
+
+((= opcion 4)
+    (format t "~%Ingrese el radio: ")
+    (let ((radio (read)))
+        (format t "~%Área del círculo = ~,2F~%"
+                (area-circulo radio))))
