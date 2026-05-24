@@ -1,1 +1,18 @@
+; =========================================================
+; PROGRAMA: TABLAS DE MULTIPLICAR DEL 1 AL 10 EN LISP
+; DESCRIPCIÓN:
+; Este programa muestra las tablas de multiplicar del 1 al 10
+; utilizando funciones, ciclos y formato de salida.
+; =========================================================
 
+(defun mostrar-encabezado ()
+    (format t "~%========================================")
+    (format t "~%     TABLAS DE MULTIPLICAR EN LISP")
+    (format t "~%========================================~%"))
+
+(defun mostrar-linea ()
+    (format t "----------------------------------------~%"))
+
+(defun mostrar-tabla (numero)
+    (format t "~%Tabla del ~D~%" numero)
+    (mostrar-linea)
