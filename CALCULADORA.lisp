@@ -80,3 +80,15 @@
 ; PROGRAMA: CÁLCULO DE ÁREAS DE FIGURAS GEOMÉTRICAS
 ; LENGUAJE: LISP
 ; =========================================================
+(defun mostrar-menu ()
+    (format t "~%======================================")
+    (format t "~%   CALCULADORA DE ÁREAS EN LISP")
+    (format t "~%======================================")
+    (format t "~%1. Área de un cuadrado")
+    (format t "~%2. Área de un rectángulo")
+    (format t "~%3. Área de un triángulo")
+    (format t "~%4. Área de un círculo")
+    (format t "~%5. Área de un trapecio")
+    (format t "~%6. Salir")
+    (format t "~%======================================")
+    (format t "~%Seleccione una opción: "))
