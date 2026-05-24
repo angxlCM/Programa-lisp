@@ -58,3 +58,6 @@
     (format t "~%========================================~%"))
 (defun mostrar-linea ()
     (format t "----------------------------------------~%"))
+(defun mostrar-tabla (numero)
+    (format t "~%Tabla del ~D~%" numero)
+    (mostrar-linea)
