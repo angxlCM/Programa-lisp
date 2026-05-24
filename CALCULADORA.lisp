@@ -67,3 +67,4 @@
             i
             (* numero i)))
 (mostrar-linea))
+(defun ejecutar-tablas ()
