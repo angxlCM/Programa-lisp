@@ -31,79 +31,57 @@
             (mostrar-menu)
             (setf opcion (read))
             (cond
-                ; -----------------------------------
-                ; CUADRADO
-                ; -----------------------------------
-                ((= opcion 1)
-                    (format t "~%Ingrese el lado del cuadrado: ")
-                    (let ((lado (read)))
-                        (format t "~%Área del cuadrado = ~,2F~%"
-                                (area-cuadrado lado))))
+((= opcion 1)
+    (format t "~%Ingrese el lado del cuadrado: ")
+    (let ((lado (read)))
+        (format t "~%Área del cuadrado = ~,2F~%"
+                (area-cuadrado lado))))
 
-                ; -----------------------------------
-                ; RECTÁNGULO
-                ; -----------------------------------
-                ((= opcion 2)
-                    (format t "~%Ingrese la base: ")
-                    (let ((base (read)))
-                        (format t "Ingrese la altura: ")
-                        (let ((altura (read)))
-                            (format t "~%Área del rectángulo = ~,2F~%"
-                                    (area-rectangulo base altura)))))
+((= opcion 2)
+    (format t "~%Ingrese la base: ")
+    (let ((base (read)))
+        (format t "Ingrese la altura: ")
+        (let ((altura (read)))
+            (format t "~%Área del rectángulo = ~,2F~%"
+                    (area-rectangulo base altura)))))
+((= opcion 3)
+    (format t "~%Ingrese la base: ")
+    (let ((base (read)))
+        (format t "Ingrese la altura: ")
+        (let ((altura (read)))
+            (format t "~%Área del triángulo = ~,2F~%"
+                    (area-triangulo base altura)))))
 
-                ; -----------------------------------
-                ; TRIÁNGULO
-                ; -----------------------------------
-                ((= opcion 3)
-                    (format t "~%Ingrese la base: ")
-                    (let ((base (read)))
-                        (format t "Ingrese la altura: ")
-                        (let ((altura (read)))
-                            (format t "~%Área del triángulo = ~,2F~%"
-                                    (area-triangulo base altura)))))
+((= opcion 4)
+    (format t "~%Ingrese el radio: ")
+    (let ((radio (read)))
+        (format t "~%Área del círculo = ~,2F~%"
+                (area-circulo radio))))
+((= opcion 5)
+    (format t "~%Ingrese la base mayor: ")
+    (let ((bmayor (read)))
+        (format t "Ingrese la base menor: ")
+        (let ((bmenor (read)))
+            (format t "Ingrese la altura: ")
+            (let ((altura (read)))
+                (format t "~%Área del trapecio = ~,2F~%"
+                        (area-trapecio
+                            bmayor
+                            bmenor
+                            altura))))))
 
-                ; -----------------------------------
-                ; CÍRCULO
-                ; -----------------------------------
-                ((= opcion 4)
-                    (format t "~%Ingrese el radio: ")
-                    (let ((radio (read)))
-                        (format t "~%Área del círculo = ~,2F~%"
-                                (area-circulo radio))))
-
-                ; -----------------------------------
-                ; TRAPECIO
-                ; -----------------------------------
-                ((= opcion 5)
-                    (format t "~%Ingrese la base mayor: ")
-                    (let ((bmayor (read)))
-                        (format t "Ingrese la base menor: ")
-                        (let ((bmenor (read)))
-                            (format t "Ingrese la altura: ")
-                            (let ((altura (read)))
-                                (format t "~%Área del trapecio = ~,2F~%"
-                                        (area-trapecio
-                                            bmayor
-                                            bmenor
-                                            altura))))))
-                ; -----------------------------------
-                ; SALIR
-                ; -----------------------------------
-                ((= opcion 6)
-                    (format t "~%Programa finalizado.~%")
-                    (return))
-
-                ; -----------------------------------
-                ; OPCIÓN INVÁLIDA
-                ; -----------------------------------
-                (t
-                    (format t "~%Opción inválida. Intente nuevamente.~%"))
+((= opcion 6)
+    (format t "~%Programa finalizado.~%")
+    (return))
+(t
+    (format t "~%Opción inválida. Intente nuevamente.~%"))
             )
         )
     )
+)
 
 ; =========================================================
 ; EJECUCIÓN DEL PROGRAMA
 ; =========================================================
 
-(iniciar-programa))
+(iniciar-programa)
