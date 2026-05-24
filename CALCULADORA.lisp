@@ -52,3 +52,7 @@
 ; Este programa muestra las tablas de multiplicar del 1 al 10
 ; utilizando funciones, ciclos y formato de salida.
 ; =========================================================
+(defun mostrar-encabezado ()
+    (format t "~%========================================")
+    (format t "~%     TABLAS DE MULTIPLICAR EN LISP")
+    (format t "~%========================================~%"))
