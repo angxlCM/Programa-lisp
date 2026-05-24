@@ -1,3 +1,11 @@
+; =========================================================
+; SISTEMA PRINCIPAL EN LISP
+; MENÚ + TABLAS + ÁREAS
+; =========================================================
+
+; =========================================================
+; MENÚ PRINCIPAL
+; =========================================================
 (defun menu-principal ()
   "Función principal que controla el flujo del programa mediante un menú interactivo."
   (let ((opcion 0))
@@ -21,7 +29,8 @@
          (progn 
            (format t "~%Saliendo del programa...~%")
            (return)))                     ;; Rompe el bucle loop y termina
-        (t (format t "~%Opción no válida, intente de nuevo.~%"))))))
+        (t 
+         (format t "~%Opción no válida, intente de nuevo.~%"))))))
 
 
 
