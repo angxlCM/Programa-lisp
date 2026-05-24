@@ -151,3 +151,14 @@
 ((= opcion 6)
     (format t "~%Programa finalizado.~%")
     (return))
+(t
+    (format t "~%Opción inválida. Intente nuevamente.~%"))
+            )
+        )
+    )
+
+; =========================================================
+; EJECUCIÓN DEL PROGRAMA
+; =========================================================
+
+(iniciar-programa))
