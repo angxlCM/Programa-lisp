@@ -94,3 +94,5 @@
     (format t "~%Seleccione una opción: "))
 (defun area-cuadrado (lado)
     (* lado lado))
+(defun area-rectangulo (base altura)
+    (* base altura))
