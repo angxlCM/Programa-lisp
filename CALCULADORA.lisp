@@ -66,3 +66,4 @@
             numero
             i
             (* numero i)))
+(mostrar-linea))
