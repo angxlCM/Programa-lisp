@@ -7,7 +7,7 @@
     (loop
       (format t "~%--- MENÚ DE OPCIONES ---~%")
       (format t "1. Ejecutar Calculadora~%")
-      (format t "2. Mostrar Tablas de Multiplicar~%")
+      (format t "2. Mostrar Tabla de Multiplicar del 1 al 10~%")
       (format t "3. Calcular Área de Figuras~%")
       (format t "4. Salir~%")
       (format t "Seleccione una opción: ")
@@ -62,15 +62,27 @@
 
 
 (defun mostrar-tablas ()
-  "Módulo desarrollado por Integrante 2: Tablas de multiplicar del 1 al 10."
-  (format t "~%[Módulo Tablas en construcción]~%"))
+  (format t "~%#### TABLAS DE MULTIPLICAR 1 al 10 ####~%~%")
+  
+  ; Fila de encabezado (números del 1 al 10)
+  (format t "  x  |")
+  (loop for i from 1 to 10 do
+    (format t "~4D" i))
+  (format t "~%")
+  
+  ; Línea separadora
+  (format t "----+----------------------------------------~%")
+  
+  ; Filas de la matriz
+  (loop for n from 1 to 10 do
+    (format t "~3D |" n)
+    (loop for i from 1 to 10 do
+      (format t "~4D" (* n i)))
+    (format t "~%")))
 
 (defun calcular-areas ()
   "Módulo desarrollado por Integrante 2: Áreas de 4 figuras geométricas."
   (format t "~%[Módulo Áreas en construcción]~%"))
-
-
-
 
 
 (menu-principal)
