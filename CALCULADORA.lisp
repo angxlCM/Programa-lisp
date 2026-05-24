@@ -96,3 +96,5 @@
     (* lado lado))
 (defun area-rectangulo (base altura)
     (* base altura))
+(defun area-triangulo (base altura)
+    (/ (* base altura) 2))
