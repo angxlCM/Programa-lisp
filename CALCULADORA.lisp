@@ -98,3 +98,5 @@
     (* base altura))
 (defun area-triangulo (base altura)
     (/ (* base altura) 2))
+(defun area-circulo (radio)
+    (* 3.1416 radio radio))
