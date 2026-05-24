@@ -92,3 +92,5 @@
     (format t "~%6. Salir")
     (format t "~%======================================")
     (format t "~%Seleccione una opción: "))
+(defun area-cuadrado (lado)
+    (* lado lado))
