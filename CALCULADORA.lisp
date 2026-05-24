@@ -73,3 +73,10 @@
     (mostrar-tabla n))
 (format t "~%Programa finalizado correctamente.~%"))
 (ejecutar-tablas)
+
+
+
+; =========================================================
+; PROGRAMA: CÁLCULO DE ÁREAS DE FIGURAS GEOMÉTRICAS
+; LENGUAJE: LISP
+; =========================================================
