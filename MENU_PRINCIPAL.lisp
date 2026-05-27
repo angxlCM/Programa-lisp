@@ -1,3 +1,7 @@
+; Adair Andre Mundo Dominguez / Juan Luis Madueño Gil / Cristhian Anthony Torres Tineo
+; Full botisto
+
+
 ; =========================================================
 ; MENÚ PRINCIPAL
 ; =========================================================
